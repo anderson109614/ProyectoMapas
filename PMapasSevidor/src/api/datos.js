@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { MongoClient } = require("mongodb");
-
+const client = new MongoClient("mongodb://localhost:27017");
 
 // GET all productos
 router.get('/productos', async (req, res) => {

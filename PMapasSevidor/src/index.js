@@ -60,6 +60,7 @@ io.on('connection', (socket) => {
 });
 const { MongoClient } = require("mongodb");
 const client = new MongoClient("mongodb://localhost:27017");
+
 async function insertDispositivo(uuid, modelo, manofactura) {
   var retu = await ExtisteDis(uuid);
   console.log(retu);
